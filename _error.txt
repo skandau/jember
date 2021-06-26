@@ -1,0 +1,222 @@
+src/mixer/lstm-layer.cpp: In function 'void {anonymous}::Adam(std::valarray<float>*, std::valarray<float>*, std::valarray<float>*, std::valarray<float>*, float, float)':
+src/mixer/lstm-layer.cpp:16:11: error: 'UPDATE_LIMIT' was not declared in this scope
+   16 |   if (t < UPDATE_LIMIT) {
+      |           ^~~~~~~~~~~~
+src/mixer/lstm-layer.cpp:25:11: error: 'UPDATE_LIMIT' was not declared in this scope
+   25 |   if (t < UPDATE_LIMIT) {
+      |           ^~~~~~~~~~~~
+src/mixer/lstm-layer.cpp: In member function 'void LstmLayer::BackwardPass(const std::valarray<float>&, int, int, int, std::valarray<float>*)':
+src/mixer/lstm-layer.cpp:131:25: error: 'UPDATE_LIMIT' was not declared in this scope
+  131 |     if (update_steps_ < UPDATE_LIMIT) {
+      |                         ^~~~~~~~~~~~
+src/models/paq8hp.cpp:32:10: fatal error: sys/mman.h: No such file or directory
+   32 | #include <sys/mman.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+src/models/ppmd.cpp:7:10: fatal error: sys/mman.h: No such file or directory
+    7 | #include <sys/mman.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+src/predictor.cpp: In constructor 'Predictor::Predictor(const std::vector<bool>&)':
+src/predictor.cpp:29:9: error: 'SEED' was not declared in this scope
+   29 |   srand(SEED);
+      |         ^~~~
+In file included from src/runner.cpp:16:
+src/readalike_prepr/phda9_preprocess.h:46:27: warning: multi-character character constant [-Wmultichar]
+   46 |       if (*(int*)&s[i] == 'xet<') {
+      |                           ^~~~~~
+In file included from src/runner.cpp:16:
+src/readalike_prepr/phda9_preprocess.h:103:27: warning: multi-character character constant [-Wmultichar]
+  103 |       if (*(int*)&s[i] == 'et/<') { //found end of text section
+      |                           ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:142:28: warning: multi-character character constant [-Wmultichar]
+  142 |       if (*(int *)&s[4] != '>di<') {
+      |                            ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:143:30: warning: multi-character character constant [-Wmultichar]
+  143 |         if (*(int *)&s[4] != 'aeh<') {
+      |                              ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:161:28: warning: multi-character character constant [-Wmultichar]
+  161 |       if (*(int *)&s[6] == 'mit<') { // process timestamp
+      |                            ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:184:30: warning: multi-character character constant [-Wmultichar]
+  184 |         if (*(int *)&s[6] == 'oc/<') {
+      |                              ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:192:30: warning: multi-character character constant [-Wmultichar]
+  192 |         if (*(int *)&s[4] == 'ver<' || *(int *)&s[4] == 'ser<') {
+      |                              ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:192:57: warning: multi-character character constant [-Wmultichar]
+  192 |         if (*(int *)&s[4] == 'ver<' || *(int *)&s[4] == 'ser<') {
+      |                                                         ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:199:30: warning: multi-character character constant [-Wmultichar]
+  199 |         if (*(int *)&s[6] == 'noc<') {
+      |                              ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:209:28: warning: multi-character character constant [-Wmultichar]
+  209 |       if (*(int *)&s[i] == 'it/<' && *(int *)&s[i + 4] == '>elt' &&
+      |                            ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:209:59: warning: multi-character character constant [-Wmultichar]
+  209 |       if (*(int *)&s[i] == 'it/<' && *(int *)&s[i + 4] == '>elt' &&
+      |                                                           ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:210:24: warning: multi-character character constant [-Wmultichar]
+  210 |           *(int *)s == '    ') {
+      |                        ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:216:28: warning: multi-character character constant [-Wmultichar]
+  216 |       if (*(int *)&s[i] == 'oc/<' && *(int *)&s[i + 4] == 'irtn') {
+      |                            ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:216:59: warning: multi-character character constant [-Wmultichar]
+  216 |       if (*(int *)&s[i] == 'oc/<' && *(int *)&s[i + 4] == 'irtn') {
+      |                                                           ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:250:16: warning: multi-character character constant [-Wmultichar]
+  250 |       if (k == ';pma') { // &amp; -> &&
+      |                ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:252:23: warning: multi-character character constant [-Wmultichar]
+  252 |       } else if (k == 'touq' && *(p1 + 4) == ';') { //&quot; -> &"
+      |                       ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:256:18: warning: multi-character character constant [-Wmultichar]
+  256 |         if (k == ';tl ') {
+      |                  ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:258:25: warning: multi-character character constant [-Wmultichar]
+  258 |         } else if (k == ';tg ') {
+      |                         ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:299:16: warning: multi-character character constant [-Wmultichar]
+  299 |       if (k == 'touq' && *(p1 + 4) == ';') {
+      |                ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:301:23: warning: multi-character character constant [-Wmultichar]
+  301 |       } else if (k == 'psbn' && *(p1 + 4) == ';') {
+      |                       ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:303:23: warning: multi-character character constant [-Wmultichar]
+  303 |       } else if (k == 'sadn' && *(p1 + 4) == 'h' && *(p1 + 5) == ';') {
+      |                       ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:305:23: warning: multi-character character constant [-Wmultichar]
+  305 |       } else if (k == 'sadm' && *(p1 + 4) == 'h' && *(p1 + 5) == ';') {
+      |                       ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:309:18: warning: multi-character character constant [-Wmultichar]
+  309 |         if (k == ';tl ') {
+      |                  ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:313:25: warning: multi-character character constant [-Wmultichar]
+  313 |         } else if (k == ';tg ') {
+      |                         ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:533:29: warning: multi-character character constant [-Wmultichar]
+  533 |       if (*(int *)&p1[i] == 'xet<') {
+      |                             ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:541:29: warning: multi-character character constant [-Wmultichar]
+  541 |       if (*(int *)&p1[i] == 'et/<') { //detected <\text> in tmp1a
+      |                             ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:601:55: warning: multi-character character constant [-Wmultichar]
+  601 |     if (memcmp(&p1[-9],"</title>",8)==0 && *(int*)p1=='    ') {
+      |                                                       ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:613:22: warning: multi-character character constant [-Wmultichar]
+  613 |         if (p2bytes=='emit') {
+      |                      ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:628:22: warning: multi-character character constant [-Wmultichar]
+  628 |         if (p2bytes!='iver' && p2bytes!='tser') {
+      |                      ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:628:41: warning: multi-character character constant [-Wmultichar]
+  628 |         if (p2bytes!='iver' && p2bytes!='tser') {
+      |                                         ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:633:43: warning: multi-character character constant [-Wmultichar]
+  633 |           if (seenContributor && p2bytes!='noc/')  p4 += 2;
+      |                                           ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:634:24: warning: multi-character character constant [-Wmultichar]
+  634 |           if (p2bytes=='tnoc')  seenContributor = 1;
+      |                        ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:697:22: warning: multi-character character constant [-Wmultichar]
+  697 |         *(int *)p4 = ';pma', p4 += 4;
+      |                      ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:699:22: warning: multi-character character constant [-Wmultichar]
+  699 |         *(int *)p4 = 'touq', p4 += 4, *p4++ = ';';
+      |                      ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:701:22: warning: multi-character character constant [-Wmultichar]
+  701 |         *(int *)p4 = ' ;tl', p4 += 3;
+      |                      ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:703:22: warning: multi-character character constant [-Wmultichar]
+  703 |         *(int *)p4 = ' ;tg', p4 += 3;
+      |                      ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:743:41: warning: multi-character character constant [-Wmultichar]
+  743 |     if (j == ';' && *(int *)(p1 - 5) == 'pma&') {
+      |                                         ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:746:22: warning: multi-character character constant [-Wmultichar]
+  746 |         *(int *)p4 = 'touq', p4 += 4, *p4++ = ';';
+      |                      ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:749:22: warning: multi-character character constant [-Wmultichar]
+  749 |         *(int *)p4 = ' ;tl', p4 += 3;
+      |                      ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:751:22: warning: multi-character character constant [-Wmultichar]
+  751 |         *(int *)p4 = ' ;tg', p4 += 3;
+      |                      ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:753:22: warning: multi-character character constant [-Wmultichar]
+  753 |         *(int *)p4 = 'psbn', p4 += 4, *p4++ = ';';
+      |                      ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:755:22: warning: multi-character character constant [-Wmultichar]
+  755 |         *(int *)p4 = 'sadn', p4 += 4, *p4++ = 'h', *p4++ = ';';
+      |                      ^~~~~~
+src/readalike_prepr/phda9_preprocess.h:757:22: warning: multi-character character constant [-Wmultichar]
+  757 |         *(int *)p4 = 'sadm', p4 += 4, *p4++ = 'h', *p4++ = ';';
+      |                      ^~~~~~
+In file included from src/runner.cpp:15:
+src/readalike_prepr/self_extract.h: In function 'int selfextract_comp()':
+src/readalike_prepr/self_extract.h:100:3: error: 'malloc_trim' was not declared in this scope
+  100 |   malloc_trim(0);
+      |   ^~~~~~~~~~~
+src/readalike_prepr/self_extract.h: In function 'int selfextract_decomp()':
+src/readalike_prepr/self_extract.h:158:3: error: 'malloc_trim' was not declared in this scope
+  158 |   malloc_trim(0);
+      |   ^~~~~~~~~~~
+In file included from src/runner.cpp:16:
+src/readalike_prepr/phda9_preprocess.h: In function 'int phda9_prepr()':
+src/readalike_prepr/phda9_preprocess.h:465:7: warning: unknown escape sequence: '\&'
+  465 |   sed("\&lt;\/title\&gt;", "\&lt;\/tiqqqtle\&gt;", ".main_reordered", "out8");
+      |       ^~~~~~~~~~~~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:465:7: warning: unknown escape sequence: '\/'
+src/readalike_prepr/phda9_preprocess.h:465:7: warning: unknown escape sequence: '\&'
+src/readalike_prepr/phda9_preprocess.h:465:28: warning: unknown escape sequence: '\&'
+  465 |   sed("\&lt;\/title\&gt;", "\&lt;\/tiqqqtle\&gt;", ".main_reordered", "out8");
+      |                            ^~~~~~~~~~~~~~~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:465:28: warning: unknown escape sequence: '\/'
+src/readalike_prepr/phda9_preprocess.h:465:28: warning: unknown escape sequence: '\&'
+src/readalike_prepr/phda9_preprocess.h:466:7: warning: unknown escape sequence: '\&'
+  466 |   sed("\&amp;<", "\&amp;qqq<", "out8", "out7");
+      |       ^~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:466:18: warning: unknown escape sequence: '\&'
+  466 |   sed("\&amp;<", "\&amp;qqq<", "out8", "out7");
+      |                  ^~~~~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:487:7: warning: unknown escape sequence: '\/'
+  487 |   sed("<\/textarea", "<\/tqqextarea", "out10", "out11");
+      |       ^~~~~~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:487:22: warning: unknown escape sequence: '\/'
+  487 |   sed("<\/textarea", "<\/tqqextarea", "out10", "out11");
+      |                      ^~~~~~~~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:489:7: warning: unknown escape sequence: '\/'
+  489 |   sed("<\/textinput", "<\/tqqextinput", "out12", "out9");
+      |       ^~~~~~~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:489:23: warning: unknown escape sequence: '\/'
+  489 |   sed("<\/textinput", "<\/tqqextinput", "out12", "out9");
+      |                       ^~~~~~~~~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h: In function 'int phda9_resto()':
+src/readalike_prepr/phda9_preprocess.h:829:7: warning: unknown escape sequence: '\/'
+  829 |   sed("<\/tqqextinput", "<\/textinput", "out1d", "out13d");
+      |       ^~~~~~~~~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:829:25: warning: unknown escape sequence: '\/'
+  829 |   sed("<\/tqqextinput", "<\/textinput", "out1d", "out13d");
+      |                         ^~~~~~~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:831:7: warning: unknown escape sequence: '\/'
+  831 |   sed("<\/tqqextarea", "<\/textarea", "out11d", "out12d");
+      |       ^~~~~~~~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:831:24: warning: unknown escape sequence: '\/'
+  831 |   sed("<\/tqqextarea", "<\/textarea", "out11d", "out12d");
+      |                        ^~~~~~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:851:7: warning: unknown escape sequence: '\&'
+  851 |   sed("\&amp;qqq<", "\&amp;<", "out4d", "out15d");
+      |       ^~~~~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:851:21: warning: unknown escape sequence: '\&'
+  851 |   sed("\&amp;qqq<", "\&amp;<", "out4d", "out15d");
+      |                     ^~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:852:7: warning: unknown escape sequence: '\&'
+  852 |   sed("\&lt;\/tiqqqtle\&gt;", "\&lt;\/title\&gt;", "out15d", ".main_decomp_restored");
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:852:7: warning: unknown escape sequence: '\/'
+src/readalike_prepr/phda9_preprocess.h:852:7: warning: unknown escape sequence: '\&'
+src/readalike_prepr/phda9_preprocess.h:852:31: warning: unknown escape sequence: '\&'
+  852 |   sed("\&lt;\/tiqqqtle\&gt;", "\&lt;\/title\&gt;", "out15d", ".main_decomp_restored");
+      |                               ^~~~~~~~~~~~~~~~~~~
+src/readalike_prepr/phda9_preprocess.h:852:31: warning: unknown escape sequence: '\/'
+src/readalike_prepr/phda9_preprocess.h:852:31: warning: unknown escape sequence: '\&'
